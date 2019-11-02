@@ -1,0 +1,266 @@
+:root {
+  --dark: #000;
+  --light: #fff;
+}
+
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--dark);
+}
+ul {
+  margin: 0;
+}
+body {
+  background: var(--dark);
+  line-height: 1.4;
+  width:100%;
+  margin:0;
+}
+
+.btn {
+  display:block;
+  background: var(--dark);
+  color: var(--light);
+  padding: 20px 25px;
+  text-decoration: none;
+  border: 0;
+  align-items: center;
+  justify-content: center;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.btn:hover {
+  background: var(--light);
+  color: var(--dark);
+  text-decoration: underline;
+  border: 0;
+  border-radius: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1{
+  font-size: 35px;
+}
+.content {
+  display: grid;
+}
+
+nav {
+  position:fixed;
+  display: grid;
+  width:100%;
+  background:var(--dark);
+  z-index: 100;
+}
+
+.nav .icon-code {
+  color:white;
+  font-size: 35px;
+}
+.nav ul {
+  display: grid;
+  padding: 20px;
+  list-style: none;
+  grid-template-columns: 5fr repeat(3, minmax(150px, 1fr));
+  grid-gap:10px;
+}
+
+.nav a {
+  background: var(--light);
+  display: grid;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.nav a:hover {
+  background: var(--dark);
+  color: var(--light);
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'cv cv logo'
+    'cv cv logo';
+  margin-top:80px;
+}
+
+.cv {
+  grid-area: cv;
+  min-height: 500px;
+  background: url(../images/page.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.cv h1 {
+  font-size: 60px;
+  margin-bottom: 0;
+  color: var(--light);
+  font-weight: bold;
+  animation: expand 1.5s 2s both;
+}
+@keyframes expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  20% {
+    letter-spacing: -0.25em;
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cv p {
+  font-size: 20px;
+  margin-top: 0;
+  color: var(--light);
+}
+.cv a {
+  color:white;
+  text-decoration: none;
+}
+.cv a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  background: rgba(0, 0, 0, 0.8);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 25px;
+  grid-area: logo;
+}
+.logo img {
+  width: 75%;
+  animation: rotate 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-720deg) scale(0.25);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(0deg) scale(0.75);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.skilles {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  min-height: 50vh;
+  text-align: center;
+  align-items: start;
+  background: var(--light);
+  padding:25px;
+}
+.skilles i {
+  color:rgba(0, 0, 0, 0.2);
+  font-size: 135px;
+  padding:15px;
+}
+
+.skilles i:hover{
+ color:var(--dark)
+}
+
+.portfolio {
+  display: grid;
+  margin: 50px 15px;
+  padding: 50px 15px;
+}
+
+.port{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content;: center;
+}
+figure{
+  display:grid;
+  justify-items: center;
+  align-items: center;
+}
+figcaption{
+  padding:15px;
+}
+.portfolio img {
+  width: 60%;
+  filter:blur(3px);
+  transition-property: all;
+  transition-duration: 1s;
+}
+.portfolio img:hover{
+  filter:blur(0px);
+}
+
+@media (max-width: 700px) {
+  .header {
+    grid-template-columns: 1fr;
+    margin-top:20px;
+  }
+  .cv {
+  min-height: 250px;
+
+}
+  .cv h1 {
+    font-size: 2.5rem;
+  }
+.logo{
+  display: none;
+}
+  nav {
+    position: static;
+  }
+  .nav .icon-code {
+    display: none;
+  }
+  .nav ul {
+    grid-template-columns: 1fr;
+    grid-gap:3px;
+  }
+  .info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+  .skilles i {
+    font-size: 50px;
+  }
+  .portfolio {
+  display:grid;
+  grid-gap: 10px;
+  margin: 50px 5px;
+  padding: 5px;
+  }
+  .port{
+    grid-template-columns: 1fr;
+  }
+}
