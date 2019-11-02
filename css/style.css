@@ -108,6 +108,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 
 }
 
@@ -171,14 +172,13 @@ nav {
     opacity: 1;
   }
 }
-
 .skilles {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr;
   min-height: 50vh;
   text-align: center;
-  align-items: start;
+  align-items: center;
   background: var(--light);
   padding:25px;
 }
@@ -201,7 +201,7 @@ nav {
 .port{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-content;: center;
+  align-content: center;
 }
 figure{
   display:grid;
@@ -220,6 +220,19 @@ figcaption{
 .portfolio img:hover{
   filter:blur(0px);
 }
+
+footer {
+  color:var(--light);
+  text-align:center;
+  padding:25px;
+}
+.footer i {
+  color:white;
+  font-size: 15px;
+}
+footer i:hover{
+  color:gray;
+ }
 
 @media (max-width: 700px) {
   .header {
@@ -251,6 +264,10 @@ figcaption{
     text-align: center;
     margin: auto;
   }
+  .skilles {
+    min-height:15vh;
+  }
+
   .skilles i {
     font-size: 50px;
   }

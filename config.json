@@ -8,7 +8,7 @@
   "glyphs": [
     {
       "uid": "d4d52a448819e8d5e849b8126416b640",
-      "css": "html5-1",
+      "css": "html5",
       "code": 59392,
       "src": "zocial"
     },
@@ -29,6 +29,30 @@
       "css": "code",
       "code": 59393,
       "src": "websymbols"
+    },
+    {
+      "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
+      "css": "search",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e9107949dd6c9e8ab2b29ae07156e38c",
+      "css": "linkedin",
+      "code": 61665,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ccc2329632396dc096bb638d4b46fb98",
+      "css": "mail-alt",
+      "code": 61664,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
+      "css": "phone",
+      "code": 59395,
+      "src": "fontawesome"
     }
   ]
 }

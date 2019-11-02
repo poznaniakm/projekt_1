@@ -1,6 +1,9 @@
 
-.icon-html5-1:before { content: '\e800'; } /* '' */
+.icon-html5:before { content: '\e800'; } /* '' */
 .icon-code:before { content: '\e801'; } /* '' */
 .icon-search:before { content: '\e802'; } /* '' */
+.icon-phone:before { content: '\e803'; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; } /* '' */
 .icon-css3:before { content: '\f13c'; } /* '' */
 .icon-wordpress:before { content: '\f19a'; } /* '' */
